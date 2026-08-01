@@ -1,0 +1,563 @@
+# Instincts generated from https://github.com/JamesWilliam1977/AI-video-translation
+# Generated: 2026-08-01T11:59:21.432Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: AI-video-translation-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/AI-video-translation
+---
+
+# AI Video Translation Commit Length
+
+## Action
+
+Keep commit messages concise (~17 characters)
+
+## Evidence
+
+- Average commit message length: 17 chars
+- Based on 100 commits
+
+---
+id: AI-video-translation-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/AI-video-translation
+---
+
+# AI Video Translation Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: AI-video-translation-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/AI-video-translation
+---
+
+# AI Video Translation Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: AI-video-translation-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/AI-video-translation
+---
+
+# AI Video Translation Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: AI-video-translation-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/AI-video-translation
+---
+
+# AI Video Translation Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: AI-video-translation-test-naming
+trigger: "when creating a test file"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/AI-video-translation
+---
+
+# AI Video Translation Test Naming
+
+## Action
+
+Name test files using the pattern: *.test.ts
+
+## Evidence
+
+- File pattern: *.test.ts
+- Consistent across test files
+
+---
+id: AI-video-translation-workflow-test-driven-development
+trigger: "when adding new functionality"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/AI-video-translation
+---
+
+# AI Video Translation Workflow Test Driven Development
+
+## Action
+
+Follow the test-driven-development workflow:
+1. Write failing test
+2. Implement code to pass test
+3. Refactor if needed
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: **/*.test.*, **/*.spec.*, src/**/*
+
+---
+id: AI-video-translation-workflow-update-readme-files
+trigger: "when doing update readme files"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/AI-video-translation
+---
+
+# AI Video Translation Workflow Update Readme Files
+
+## Action
+
+Follow the update-readme-files workflow:
+1. Edit README.md and/or README_ENG.md
+2. Optionally update/add related images (in images/)
+3. Optionally update requirements.txt
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~8x per month
+- Files: README.md, README_ENG.md, images/
+
+---
+id: AI-video-translation-workflow-codebase-optimization
+trigger: "when doing codebase optimization"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/AI-video-translation
+---
+
+# AI Video Translation Workflow Codebase Optimization
+
+## Action
+
+Follow the codebase-optimization workflow:
+1. Edit core Python files (cli.py, config.py, sp.py, tools.py, test.py)
+2. Optionally update README files
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: cli.py, config.py, sp.py
+
+---
+id: AI-video-translation-workflow-bugfix-multiple-core-files
+trigger: "when doing bugfix multiple core files"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/AI-video-translation
+---
+
+# AI Video Translation Workflow Bugfix Multiple Core Files
+
+## Action
+
+Follow the bugfix-multiple-core-files workflow:
+1. Identify and fix bugs in core files (cli.py, config.py, sp.py, tools.py, test.py)
+2. Update README files if necessary
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: cli.py, config.py, sp.py
+
+---
+id: AI-video-translation-workflow-gui-feature-development-pyqt5
+trigger: "when doing gui feature development pyqt5"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/AI-video-translation
+---
+
+# AI Video Translation Workflow Gui Feature Development Pyqt5
+
+## Action
+
+Follow the gui-feature-development-pyqt5 workflow:
+1. Edit or add .py and .ui files for GUI (cn.py, en.py, cn.ui, en.ui)
+2. Update README files
+3. Update/add images for GUI
+4. Update requirements.txt if dependencies change
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: cn.py, en.py, cn.ui
+
+---
+id: AI-video-translation-workflow-add-new-feature-with-configure-module
+trigger: "when doing add new feature with configure module"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/JamesWilliam1977/AI-video-translation
+---
+
+# AI Video Translation Workflow Add New Feature With Configure Module
+
+## Action
+
+Follow the add-new-feature-with-configure-module workflow:
+1. Create or update files in configure/ (e.g., baidu.py, chatgpt.py, language.py, .ui files)
+2. Edit core scripts (cli.py, sp.py, test.py)
+3. Update README files
+4. Update requirements.txt if needed
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: configure/, cli.py, sp.py
+
+---
+id: ai-video-translation-instinct-file-naming
+trigger: "When creating or renaming a file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/AI-video-translation
+---
+
+# Ai Video Translation Instinct File Naming
+
+## Action
+
+Use snake_case for file names
+
+## Evidence
+
+- Pattern in files: cli.py, config.py, sp.py, tools.py, test.py
+
+---
+id: ai-video-translation-instinct-function-naming
+trigger: "When defining a function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/AI-video-translation
+---
+
+# Ai Video Translation Instinct Function Naming
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: ai-video-translation-instinct-class-naming
+trigger: "When defining a class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/AI-video-translation
+---
+
+# Ai Video Translation Instinct Class Naming
+
+## Action
+
+Use PascalCase for class names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: ai-video-translation-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/AI-video-translation
+---
+
+# Ai Video Translation Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constants
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: ai-video-translation-instinct-import-style
+trigger: "When importing modules within the package"
+confidence: 0.85
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/AI-video-translation
+---
+
+# Ai Video Translation Instinct Import Style
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: ai-video-translation-instinct-export-style
+trigger: "When exporting functions or classes from a module"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: JamesWilliam1977/AI-video-translation
+---
+
+# Ai Video Translation Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: ai-video-translation-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/AI-video-translation
+---
+
+# Ai Video Translation Instinct Test Location
+
+## Action
+
+Place test files in the separate 'tests' directory
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+- Presence of 'tests' folder
+
+---
+id: ai-video-translation-instinct-test-pattern
+trigger: "When naming a test file"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/AI-video-translation
+---
+
+# Ai Video Translation Instinct Test Pattern
+
+## Action
+
+Use the pattern '*.test.ts' for test files
+
+## Evidence
+
+- Pattern in testing.filePattern
+
+---
+id: ai-video-translation-instinct-tdd-sequence
+trigger: "When developing new features or fixing bugs"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: JamesWilliam1977/AI-video-translation
+---
+
+# Ai Video Translation Instinct Tdd Sequence
+
+## Action
+
+Follow TDD: write a failing test, implement code to pass, then refactor
+
+## Evidence
+
+- Workflow: test-driven-development
+- Commit sequence: Write failing test → Implement code → Refactor
+
+---
+id: ai-video-translation-instinct-commit-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: JamesWilliam1977/AI-video-translation
+---
+
+# Ai Video Translation Instinct Commit Format
+
+## Action
+
+Use a short, imperative message (e.g., 'Edit readme.md', 'Delete tmp directory')
+
+## Evidence
+
+- Pattern in commits.examples
+- Average commit length: 17
+
+---
+id: ai-video-translation-instinct-update-readme
+trigger: "When documentation or feature changes need to be reflected"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/AI-video-translation
+---
+
+# Ai Video Translation Instinct Update Readme
+
+## Action
+
+Edit README.md and/or README_ENG.md; optionally update images/ and requirements.txt
+
+## Evidence
+
+- Workflow: update-readme-files
+- Files: README.md, README_ENG.md, images/, requirements.txt
+
+---
+id: ai-video-translation-instinct-codebase-optimization
+trigger: "When refactoring or optimizing codebase"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/AI-video-translation
+---
+
+# Ai Video Translation Instinct Codebase Optimization
+
+## Action
+
+Edit core Python files (cli.py, config.py, sp.py, tools.py, test.py); optionally update README files
+
+## Evidence
+
+- Workflow: codebase-optimization
+- Files: cli.py, config.py, sp.py, tools.py, test.py, README.md, README_ENG.md
+
+---
+id: ai-video-translation-instinct-bugfix-multiple-core-files
+trigger: "When fixing bugs affecting multiple core files"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/AI-video-translation
+---
+
+# Ai Video Translation Instinct Bugfix Multiple Core Files
+
+## Action
+
+Fix bugs in cli.py, config.py, sp.py, tools.py, test.py; update README files if necessary
+
+## Evidence
+
+- Workflow: bugfix-multiple-core-files
+- Files: cli.py, config.py, sp.py, tools.py, test.py, README.md, README_ENG.md
+
+---
+id: ai-video-translation-instinct-gui-feature-pyqt5
+trigger: "When adding or updating GUI features"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/AI-video-translation
+---
+
+# Ai Video Translation Instinct Gui Feature Pyqt5
+
+## Action
+
+Edit/add .py and .ui files for GUI (cn.py, en.py, cn.ui, en.ui); update README files, images/, and requirements.txt
+
+## Evidence
+
+- Workflow: gui-feature-development-pyqt5
+- Files: cn.py, en.py, cn.ui, en.ui, README.md, README_ENG.md, images/, requirements.txt
+
+---
+id: ai-video-translation-instinct-add-configure-feature
+trigger: "When adding a new translation or configuration feature"
+confidence: 0.88
+domain: workflow
+source: repo-analysis
+source_repo: JamesWilliam1977/AI-video-translation
+---
+
+# Ai Video Translation Instinct Add Configure Feature
+
+## Action
+
+Create/update files in configure/; edit cli.py, sp.py, test.py; update README files and requirements.txt as needed
+
+## Evidence
+
+- Workflow: add-new-feature-with-configure-module
+- Files: configure/, cli.py, sp.py, test.py, README.md, README_ENG.md, requirements.txt
+
