@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI Video Translation"
+  short_description: "Repo-specific patterns and workflows for AI-video-translation"
+  default_prompt: "Use the AI-video-translation repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
